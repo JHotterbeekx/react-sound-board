@@ -1,0 +1,28 @@
+{
+  "name": "react-sound-board",
+  "version": "1.0.0",
+  "description": "A visual sound board in react",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.8.1"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JHotterbeekx/react-sound-board.git"
+  },
+  "keywords": [],
+  "author": "John Hotterbeekx <john.online@hotterbeekx.nl> (https://github.com/JHotterbeekx/word-search-solver)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JHotterbeekx/react-sound-board/issues"
+  },
+  "homepage": "https://github.com/JHotterbeekx/react-sound-board#readme"
+}
