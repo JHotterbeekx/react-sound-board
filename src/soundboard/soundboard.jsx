@@ -7,14 +7,13 @@ export default class SoundBoard extends Component {
   buildBoard() {
     const { sounds } = this.props;
     return this.props.sounds.map(sound => (
-      <Button key={sound.title} url={sound.url} title={sound.title} />
+      <Button key={sound.title} url={sound.url} title={sound.title} image={sound.image} />
     ))
   }
 
   render() {
     return (
       <div>
-        <h1>Sound board</h1>
         {this.buildBoard()}
       </div>
     );
@@ -25,5 +24,6 @@ SoundBoard.propTypes = {
   sounds: PropTypes.arrayOf(PropTypes.shape({
     url: PropTypes.string,
     title: PropTypes.string,
+    image: PropTypes.string,
   }))
 }

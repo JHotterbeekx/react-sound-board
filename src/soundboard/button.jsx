@@ -9,12 +9,18 @@ export default class Button extends Component {
 
 
   render() {
-    const { title } = this.props;
-    return <button onClick={() => this.audio.play()}>{title}</button>
+    const { title, image } = this.props;
+    return (
+      <div className="button-wrapper">
+        <img src={image} onClick={() => this.audio.play()} />
+        <div className="button-title">{title}</div>
+      </div>
+    );
   }
 }
 
 Button.propTypes = {
   url: PropTypes.string,
   title: PropTypes.string,
+  image: PropTypes.string,
 }
